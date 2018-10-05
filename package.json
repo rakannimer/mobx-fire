@@ -1,6 +1,6 @@
 {
   "name": "mobx-fire",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Observable Firebase Nodes",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -13,7 +13,9 @@
   "scripts": {
     "watch": "jest --watch --coverage",
     "build": "rollup -c",
-    "start": "npm run build && node dist/index.cjs.js"
+    "test": "jest",
+    "start": "npm run build && node dist/index.cjs.js",
+    "prepublish": "npm run test && npm run build"
   },
   "peerDependencies": {
     "mobx": ">=5.0.0"

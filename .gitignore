@@ -1,4 +1,5 @@
 node_modules
 dist
-.rpt2_cache
 test-config.ts
+.rpt2_cache
+.vscode
