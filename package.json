@@ -1,6 +1,6 @@
 {
   "name": "mobx-fire",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Observable Firebase Nodes",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,6 +17,9 @@
     "start": "npm run build && node dist/index.cjs.js",
     "prepublish": "npm run test && npm run build"
   },
+  "files": [
+    "dist/"
+  ],
   "peerDependencies": {
     "mobx": ">=5.0.0"
   },
