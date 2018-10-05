@@ -25,6 +25,7 @@ export function toMap<K, V>(
     mapKey = defaultMap,
     mapValue = defaultMap,
     filter = defaultFilter,
+    // For better types. Object cant take enum for keys but maps can.
     initial = observable.map({}),
     getUnsub = () => {}
   } = {
@@ -74,14 +75,4 @@ export function toMap<K, V>(
     return;
   });
   return map;
-  // const unsub = ref.on("value", (v: any) => {
-  //   const valueOrNull = !v ? null : v.val();
-  //   if (filter(valueOrNull)) {
-  //     box.set(map(valueOrNull));
-  //   }
-  //   if (shouldUnsubWhen(valueOrNull)) {
-  //     unsub && unsub();
-  //   }
-  // });
-  // return box;
 }

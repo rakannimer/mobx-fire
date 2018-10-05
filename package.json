@@ -15,6 +15,9 @@
     "build": "rollup -c",
     "start": "npm run build && node dist/index.cjs.js"
   },
+  "peerDependencies": {
+    "mobx": ">=5.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.3",
     "firebase": "^5.5.3",
