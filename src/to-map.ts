@@ -8,9 +8,6 @@ function defaultFilter<V>(p: V, c: V) {
   return true;
 }
 
-function defaultShouldUnsub<T>(a: T) {
-  return false;
-}
 export type ToMapArgs<K, V> = {
   mapKey?: (m: K) => any;
   mapValue?: (m: V) => any;
