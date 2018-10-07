@@ -1,7 +1,7 @@
 {
   "name": "mobx-fire",
-  "version": "0.0.0-development",
-  "description": "Observable Firebase Nodes",
+  "version": "0.2.0",
+  "description": "Map your Firebase Queries to a MobX observable Array, Box or Map.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "js:next": "dist/index.esm.js",
