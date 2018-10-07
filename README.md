@@ -49,8 +49,8 @@ const array = toArray(ref, initial: [{value:"A", key:"a"}]); // returns an order
 
 All methods take in 2 arguments, the first is required and the second optional :
 
-- ref : Any firebase ref, with or without sorting and/or limiting.
-- options : depends on the method
+- `ref` : Any firebase ref, with or without sorting and/or limiting.
+- `options` : depends on the method
 
 ##### toBox
 
